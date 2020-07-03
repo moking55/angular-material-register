@@ -1,0 +1,64 @@
+.bg {
+  background: white url(https://i.imgur.com/eQbWZjM.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.def-card {
+  margin: 50px;
+  padding: 50px;
+  width: 50%;
+}
+
+.reg-btn {
+  width: 40%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: crimson;
+}
+
+.text-title {
+  margin: 100px 0px 0px 0px;
+  font-size: 8vw;
+  font-size: 4vh;
+  color: white;
+}
+
+.field-float {
+  float: left;
+  display: block;
+  width: 50%;
+}
+
+.img-float {
+  float: right;
+  display: block;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .field-float {
+    float: left;
+    width: 100%;
+  }
+
+  .img-float {
+    float: right;
+    align-self: center;
+    width: 100%;
+  }
+}
+
+.form-stacks {
+  display: block;
+}

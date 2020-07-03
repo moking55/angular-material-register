@@ -1,0 +1,37 @@
+<mat-drawer-container class="app-container" autosize>
+  <mat-toolbar color="primary">
+    <button mat-icon-button mat-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+  </mat-toolbar>
+  <mat-drawer #drawer class="app-sidenav" mode="side">
+    <button mat-button routerLink="/login" class="btn-full">Login</button>
+    <p align="center">OR</p>
+    <button mat-button routerLink="/reg" class="btn-full">Register</button>
+  </mat-drawer>
+
+
+
+  <div fxLayout="column" fxLayoutAlign="center center" >
+    <mat-card class="card-main">
+        <mat-card-header>
+            <img src="https://i.pinimg.com/564x/60/ca/53/60ca53ecca91d0e26b64a76fa962be1e.jpg" mat-card-avatar alt="">
+            <mat-card-title class="title-badges">Administrator</mat-card-title>
+            <mat-card-subtitle>
+              Knowledge is power.
+            </mat-card-subtitle>
+        </mat-card-header>
+        <img matCardImage class="img-cover" src="https://i.imgur.com/UgxKETW.png">
+        <mat-card-content class="card-content">
+            <h3>Hello world!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, alias totam? Nulla, ullam suscipit alias harum iusto corporis ab blanditiis doloribus saepe. Laudantium voluptates veritatis cumque at. Aliquid, numquam accusantium.</p>
+
+            <h3>FAQ</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium consectetur fuga impedit. Sed debitis odio sit suscipit vero provident facere itaque magnam earum sunt odit optio quasi, praesentium nesciunt!</p>
+          </mat-card-content>
+    </mat-card>
+  </div>
+</mat-drawer-container>
+
+

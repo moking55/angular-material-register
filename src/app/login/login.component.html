@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="bg">
+  <div fxLayout="column warp" fxLayoutAlign="center center" >
+
+<h1 class="text-center text-title">เข้าสู่ระบบ</h1>
+<mat-card class="def-card">
+    <mat-card-content>
+      <img src="https://i.imgur.com/uQacB26.png" class="img-float" alt="">
+        <mat-form-field appearance="outline" class="field-float" float-label="auto" style="margin-top: 50px;">
+          <mat-label>อีเมล์</mat-label>
+              <input matInput formControlName="formControlName"
+                     type="email"
+                     required
+                     placeholder="ป้อนอีเมล์ที่นี่">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="field-float" float-label="auto">
+          <mat-label>รหัสผ่าน</mat-label>
+              <input matInput formControlName="formControlName"
+                     type="password"
+                     required
+                     placeholder="ป้อนรหัสผ่านที่นี่">
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions align="center">
+        <button mat-raised-button color="primary" class="reg-btn">เข้าสู่ระบบ</button>
+    </mat-card-actions>
+
+</mat-card>
+<small style="color: white;">ยังไม่มีบัญชี? - <a routerLink="/reg">สมัคเลย</a></small>
+  </div>
+</div>
